@@ -1,4 +1,5 @@
 import { useContext } from "react"
+import { useHistory } from "react-router-dom"
 
 import { AuthContext } from "../../../contexts/AuthContext"
 import { FormInput } from "../../molecules/FormInput"
@@ -7,6 +8,7 @@ import { Button } from "../../atoms"
 export const SignInForm = () => {
     const { dispatchAuth, authActions } = useContext(AuthContext)
     const { SET_TOKEN } = authActions
+    const history = useHistory()
 
     const handleClick = (e) => {
         e.preventDefault()
@@ -14,6 +16,7 @@ export const SignInForm = () => {
         /** Axios call */
         
         dispatchAuth({ type: SET_TOKEN })
+        history.push('/')
     }
 
     return (
