@@ -7,14 +7,12 @@ export const useAuthRedirection = () => {
     const history = useHistory()
 
     useEffect(() => {
-        if (auth) {
-            switch (auth.token) {
-                case true:
-                    history.push("/")
-                    break
-                default:
-                    history.push("/signin")
-            }
+        switch (auth && auth.token) {
+            case undefined:
+                history.push("/signin")
+                break
+            default:
+                return
         }
     }, [auth, history])
 } 
