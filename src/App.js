@@ -6,11 +6,13 @@ import {
 } from "react-router-dom";
 
 import { AuthContextProvider } from './contexts/AuthContext'
+import { MusicContextProvider } from './contexts/MusicContext';
 import { FeedPage, SignInPage, SignUpPage, UploadPage } from "./components/pages"
 
 const App = () => {
   return (
     <AuthContextProvider>
+    <MusicContextProvider>
       <Router>
         <Switch>
           <Route path="/" exact>
@@ -27,6 +29,7 @@ const App = () => {
           </Route>        
         </Switch>
       </Router>
+    </MusicContextProvider>
     </AuthContextProvider>
   );
 }
