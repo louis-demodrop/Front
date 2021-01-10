@@ -4,5 +4,6 @@ import { FileInput } from './FileInput'
 import { Label } from './Label'
 import { Range } from './Range'
 import { TextInput } from './TextInput'
+import { SearchInput } from './SearchInput'
 
-export { Button, Card, FileInput, Label, Range, TextInput }
+export { Button, Card, FileInput, Label, Range, TextInput, SearchInput }
