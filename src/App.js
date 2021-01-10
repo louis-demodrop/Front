@@ -6,10 +6,11 @@ import {
 } from "react-router-dom";
 
 import { AuthContextProvider } from './contexts/AuthContext'
-import { MusicContextProvider } from './contexts/MusicContext';
+import { MusicContextProvider } from './contexts/MusicContext'
 import { FeedPage, SignInPage, SignUpPage, UploadPage } from "./components/pages"
 
 const App = () => {
+
   return (
     <AuthContextProvider>
     <MusicContextProvider>

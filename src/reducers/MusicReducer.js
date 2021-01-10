@@ -3,7 +3,8 @@ export const musicActions = {
     SET_USER_MUSIC_LIST: "SET_USER_MUSIC_LIST",
     ADD_USER_MUSIC: "ADD_USER_MUSIC",
     SET_MUSIC_FEED: "SET_MUSIC_FEED",
-    ADD_MUSIC_FEED: "ADD_MUSIC_FEED"
+    ADD_MUSIC_FEED: "ADD_MUSIC_FEED",
+    SET_SEARCH: "SET_SEARCH",
 }
 
 export const MusicReducer = (state, action) => {
@@ -18,6 +19,8 @@ export const MusicReducer = (state, action) => {
             return { ...state, musicFeed: action.musicFeed }
         case "ADD_MUSIC_FEED":
             return { ...state, musicFeed: [...state.musicFeed, ...action.browsed] }
+        case "SET_SEARCH":
+            return { ...state, search: action.search }
         default:
             return state
     }
