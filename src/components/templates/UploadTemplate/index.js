@@ -1,5 +1,5 @@
+import { UploadForm } from '../../organisms/UploadForm'
+
 export const UploadTemplate = () => {
-    return (<>
-        Upload
-    </>)
+    return (<UploadForm></UploadForm>)
 }
