@@ -6,16 +6,18 @@ import { InputMusicFile } from "../../molecules/InputMusicFile"
 import { Button } from "../../atoms"
 
 export const UploadForm = () => {
-    const { music } = useContext(MusicContext)
+    const { music, dispatchMusic, musicActions } = useContext(MusicContext)
     
     const handleUpload = (e) => {
         e.preventDefault()
         console.log(`uploading ${music.fileToUpload.name}`)
         const formData = new FormData()
         if (music.fileToUpload) {
-            formData.append(music.fileToUpload.name, music.fileToUpload)
+            const file = music.fileToUpload
+            formData.append(file.name, file)
+            dispatchMusic({ type: musicActions.ADD_USER_MUSIC, musicName: file.name })
         }
-        
+
         /* try {
             const res = await axios.post('/upload', formData, {
               headers: {
