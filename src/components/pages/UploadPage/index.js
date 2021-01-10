@@ -1,6 +1,12 @@
+import { Header } from '../../organisms/Header'
 import { UploadTemplate } from '../../templates/'
+import { useAuthRedirection } from '../../../hooks/useAuthRedirection'
 
 export const UploadPage = () => {
+    useAuthRedirection()
 
-    return (<UploadTemplate></UploadTemplate>)
+    return (<>
+        <Header></Header>
+        <UploadTemplate></UploadTemplate>
+    </>)
 }
