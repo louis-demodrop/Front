@@ -1,0 +1,14 @@
+$primary: #7E57F4;
+$primaryDarker: #5D2CF2;
+$secondary: #32CD9F;
+$dark:#463F5A;
+$darker:#3A3743;
+$light: #F9F9FB;
+
+body{
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	background: $darker;
+	color: $light;
+}
