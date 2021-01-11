@@ -1,1 +1,17 @@
-//Yeah
+@import '../../index.scss';
+
+
+button{ 
+	background-color: $primary;
+	padding:0 16px;
+	line-height: 36px;
+	height: 36px;
+	color: $light;
+	text-transform: uppercase;
+	border-radius: 4px;
+	margin: 8px 8px;
+	cursor: pointer;
+	&:hover{
+		background-color: $primaryDarker;
+	}
+}
