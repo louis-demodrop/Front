@@ -1,3 +1,5 @@
+//colors:
+
 $primary: #7E57F4;
 $primaryDarker: #5D2CF2;
 $secondary: #32CD9F;
@@ -5,10 +7,19 @@ $dark:#463F5A;
 $darker:#3A3743;
 $light: #F9F9FB;
 
+//type system:
+
+@mixin font{
+	font-family: roboto;
+}
+
+//default styles:
+
 body{
 	margin: 0;
 	display: flex;
 	flex-direction: column;
 	background: $darker;
 	color: $light;
+	@include font;
 }

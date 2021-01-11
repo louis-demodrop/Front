@@ -11,6 +11,9 @@ button{
 	border-radius: 4px;
 	margin: 8px 8px;
 	cursor: pointer;
+	display: inline-flex;
+	appearance: none;
+	border: none;
 	&:hover{
 		background-color: $primaryDarker;
 	}
