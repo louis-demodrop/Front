@@ -14,7 +14,11 @@ export const MusicContextProvider = ({ children }) => {
         if (auth && auth.token) {
             /** remplacer par appel axios */
 
-            const userMusicList = ['Donjon House', 'Donjon Rap', 'Donjon Funk']
+            const userMusicList = [
+                { author: "Momo", title: "Le Bronx", duration: "6:45" },
+                { author: "Momo", title: "Le Bronx", duration: "6:45" },
+                { author: "Momo", title: "Le Bronx", duration: "6:45" }
+            ]
             dispatchMusic({ type: musicActions.SET_USER_MUSIC_LIST, userMusicList })
         }
     }, [auth])
