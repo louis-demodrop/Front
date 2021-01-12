@@ -1,6 +1,6 @@
-export const FileInput = ({ onDrop, onChange, onDragOver, multiple }) => {
+export const FileInput = ({ onDrop, onChange, onDragOver, accept, multiple }) => {
 
     return (
-        <input type="file" onDrop={onDrop} onChange={onChange} onDragOver={onDragOver} multiple={multiple}></input>
+        <input type="file" onDrop={onDrop} onChange={onChange} onDragOver={onDragOver} accept={accept} multiple={multiple}></input>
     )
 }

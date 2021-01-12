@@ -40,6 +40,6 @@ export const InputMusicFile = () => {
     }
 
     return (
-        <FileInput onDrop={handleDrop} onChange={handleChange} onDragOver={handleDragOver} multiple={false}></FileInput>
+        <FileInput onDrop={handleDrop} onChange={handleChange} onDragOver={handleDragOver} accept="audio/*" multiple={false}></FileInput>
     )
 }
