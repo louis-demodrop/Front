@@ -9,6 +9,11 @@ $light: #F9F9FB;
 
 //type system:
 
+h1{
+	margin: 0;
+}
+
+//mixins
 @mixin font{
 	font-family: roboto, sans-serif;
 }
