@@ -22,4 +22,8 @@ body{
 	background: $darker;
 	color: $light;
 	@include font;
+	#root{
+		display:flex;
+		flex-direction: column;
+	}
 }
