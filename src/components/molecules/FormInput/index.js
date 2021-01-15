@@ -1,6 +1,6 @@
 import { createContext, useState } from 'react'
 import { Label, TextInput } from '../../atoms/'
-
+import "./index.css"
 
 export const FormInputContext = createContext()
 
@@ -14,7 +14,7 @@ const FormInputContextProvider = ({ children, value }) => {
 
 export const FormInput = ({ value, label }) => {
     return (
-        <span>
+        <span className="formInput">
             <FormInputContextProvider value={value}>
                 <Label>{label}</Label>
                 <TextInput></TextInput>
