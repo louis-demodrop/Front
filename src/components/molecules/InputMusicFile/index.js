@@ -1,5 +1,7 @@
 import { useContext } from 'react'
 
+import './index.css'
+
 import { MusicContext } from '../../../contexts/MusicContext'
 import { FileInput } from '../../atoms/'
 
