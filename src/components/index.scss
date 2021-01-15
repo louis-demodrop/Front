@@ -20,9 +20,10 @@ h1{
 	font-family: roboto, sans-serif;
 }
 
-@mixin flex($direction){
+@mixin flex($direction, $align-items: stretch){
 	display: flex;
 	flex-direction: $direction;
+	align-items: $align-items;
 	&:first-child{
 		margin-left: 0;	
 	}
