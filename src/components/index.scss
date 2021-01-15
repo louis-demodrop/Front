@@ -10,8 +10,20 @@ $light: #F9F9FB;
 //type system:
 
 @mixin font{
-	font-family: roboto;
+	font-family: roboto, sans-serif;
 }
+
+@mixin flex($direction){
+	display: flex;
+	flex-direction: $direction;
+	&:first-child{
+		margin-left: 0;	
+	}
+	&:last-child{
+		margin-right: 0;
+	}
+}
+
 
 //default styles:
 

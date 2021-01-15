@@ -10,7 +10,7 @@ button{
 	border-radius: 4px;
 	margin: 8px 8px;
 	cursor: pointer;
-	display: inline-flex;
+	@include flex(row);
 	appearance: none;
 	border: none;
 	&:hover{
