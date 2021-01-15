@@ -1,0 +1,1 @@
+body{margin:0;display:flex;flex-direction:column;background:#3A3743;color:#F9F9FB;font-family:roboto, sans-serif}body #root{display:flex;flex-direction:column}body #root .form{display:flex;flex-direction:column;align-items:flex-end;max-width:512px;margin:0 auto}header{display:flex;flex-direction:row;padding:0 32px}header:first-child{margin-left:0}header:last-child{margin-right:0}

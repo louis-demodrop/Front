@@ -1,6 +1,8 @@
 import { useContext } from 'react'
 import { useHistory } from 'react-router-dom'
 
+import './index.css'
+
 import { AuthContext } from '../../../contexts/AuthContext'
 import { SearchInput, Button } from '../../atoms/'
 

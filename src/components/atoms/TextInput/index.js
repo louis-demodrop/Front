@@ -1,4 +1,6 @@
 import { useContext } from "react"
+import './index.css'
+
 
 import { FormInputContext } from '../../molecules/FormInput'
 
