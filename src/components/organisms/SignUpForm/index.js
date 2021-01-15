@@ -17,7 +17,7 @@ export const SignUpForm = () => {
     }
 
     return (
-        <span>
+        <span className="form">
             <FormInput label="Username"></FormInput>
             <FormInput label="Password"></FormInput>
             <FormInput label="Confirm password"></FormInput>

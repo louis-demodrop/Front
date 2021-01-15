@@ -20,7 +20,7 @@ export const SignInForm = () => {
     }
 
     return (
-        <span>
+        <span className="form">
             <FormInput label="Username"></FormInput>
             <FormInput label="Password"></FormInput>
             <Button text="Sign In" onClick={handleClick}></Button>

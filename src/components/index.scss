@@ -25,5 +25,12 @@ body{
 	#root{
 		display:flex;
 		flex-direction: column;
-	}
+		.form{
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			max-width: 512px;
+			margin: 0 auto;
+		}
+}
 }

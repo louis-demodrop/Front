@@ -50,7 +50,7 @@ export const UploadForm = () => {
     }
 
     return (
-        <span>
+        <span className="form">
             <FormInput label="Sound name"></FormInput>
             <InputMusicFile></InputMusicFile>
             <Button text="Upload" onClick={handleUpload} disabled={music ? !music.fileToUpload : true}></Button>
