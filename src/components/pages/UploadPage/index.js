@@ -1,12 +1,17 @@
-import { Header } from '../../organisms/Header'
+import axios from '../../../config/axios'
 import { UploadTemplate } from '../../templates/'
-import { useAuthRedirection } from '../../../hooks/useAuthRedirection'
 
 export const UploadPage = () => {
-    useAuthRedirection()
 
-    return (<>
-        <Header></Header>
-        <UploadTemplate></UploadTemplate>
-    </>)
+    const handleUpload = async (form) => {
+        const formData = new FormData()
+        formData.append('title', form.title)
+        formData.append('audio', form.audio)
+        const { data: { success }} = await axios.post('/music/upload', formData, { headers: { 'Content-Type': 'multipart/form-data' } })
+        if (success) {
+            console.log(success)
+        }
+    }
+
+    return <UploadTemplate handleUpload={handleUpload}></UploadTemplate>
 }
