@@ -1,5 +1,6 @@
-import axios from '../../../config/axios'
 import { useHistory } from 'react-router-dom'
+
+import axios from '../../../config/axios'
 import { SignUpTemplate } from '../../templates/'
 
 export const SignUpPage = () => {
