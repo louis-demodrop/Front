@@ -1,7 +1,3 @@
-import './index.css'
-
-export const Label = ({ children }) => {
-    return (
-        <label>{children}</label>
-    )
-}
+export const Label = ({ children }) => (
+    <label>{children}</label>
+)

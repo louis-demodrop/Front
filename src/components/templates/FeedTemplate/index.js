@@ -1,5 +1,6 @@
 export const FeedTemplate = () => {
-    return (<>
-        Feed
-    </>)
+    
+    /** To implement state management */
+
+    return (<> Feed Template </>)
 }
