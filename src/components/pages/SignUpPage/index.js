@@ -3,10 +3,9 @@ import { useHistory } from 'react-router-dom'
 import { SignUpTemplate } from '../../templates/'
 
 export const SignUpPage = () => {
+    const history = useHistory()
 
     const handleSignUp = async (form) => {
-        const history = useHistory()
-
         const { data: { result } } = await axios.post('/user/register', form)
         if (result) {
             history.push('/signin')
