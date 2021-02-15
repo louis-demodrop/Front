@@ -1,7 +1,29 @@
-import { SignInForm } from "../../organisms/SignInForm"
+import { useState } from "react"
 
-export const SignInTemplate = () => {    
-    return (<>
-        <SignInForm></SignInForm>
-    </>)
+import { Form } from "../../molecules/Form"
+import { FormInput } from "../../molecules/FormInput"
+import { TextInput } from "../../atoms"
+
+export const SignInTemplate = ({ handleSignIn }) => {
+    const [form, setForm] = useState({ username: "", password: "" })
+
+    return (
+        <Form label="Sign In" onSubmit={() => handleSignIn(form)}>
+            <FormInput label="username">
+                <TextInput 
+                    name="username"
+                    value={form.username}
+                    onChange={(e) => setForm({ ...form, username: e.target.value })}>
+                </TextInput>
+            </FormInput>
+            <FormInput label="password">
+                <TextInput 
+                    password
+                    name="password"
+                    value={form.password}
+                    onChange={(e) => setForm({ ...form, password: e.target.value })}>
+                </TextInput>
+            </FormInput>
+        </Form>
+    )
 }
