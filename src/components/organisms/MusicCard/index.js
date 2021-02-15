@@ -7,11 +7,13 @@ export const MusicCard = ({ music: { author, title, duration }}) => {
     const [isOn, toggleIsOn] = useToggle(false)
     const [progress/* , setProgress */] = useState(0)
     
-    return (<Card>
-        <Button text={isOn ? "Pause" : "Play"} onClick={toggleIsOn}></Button>
-        <Range value={progress}></Range>
-        <span>{author}</span>
-        <span>{title}</span>
-        <span>{duration}</span>
-    </Card>)
+    return (
+        <Card>
+            <Button onClick={toggleIsOn}>{isOn ? "Pause" : "Play"}</Button>
+            <Range value={progress}></Range>
+            <span>{author}</span>
+            <span>{title}</span>
+            <span>{duration}</span>
+        </Card>
+    )
 }
