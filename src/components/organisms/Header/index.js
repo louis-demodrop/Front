@@ -17,9 +17,11 @@ export const Header = () => {
     return (
         <header>
             <h1 role="button" onClick={() => history.push('/')}>DEMODROP</h1>
-            <SearchInput></SearchInput>
-            <Button onClick={() => history.push('/upload')}>Upload</Button>
-            <Button onClick={handleSignOut}>Sign Out</Button>
-        </header>
+            <div className="right">
+				<SearchInput></SearchInput>
+            	<Button onClick={() => history.push('/upload')}>Upload</Button>
+            	<Button onClick={handleSignOut}>Sign Out</Button>
+        	</div>
+		</header>
     )
 }
