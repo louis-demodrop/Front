@@ -1,3 +1,5 @@
+import './index.css'
+
 export const FileInput = ({ onDrop, onChange, onDragOver, accept, multiple }) => (
     <input
         type="file"

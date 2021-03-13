@@ -1,3 +1,5 @@
+import './index.css'
+
 export const Button = ({ children, onClick, disabled }) => {
 
     return (

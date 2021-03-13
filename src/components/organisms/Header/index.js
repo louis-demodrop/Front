@@ -1,4 +1,5 @@
 import { useHistory } from 'react-router-dom'
+import './index.css'
 
 import axios from '../../../config/axios'
 import { SearchInput, Button } from '../../atoms/'
