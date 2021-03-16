@@ -2,7 +2,7 @@ import { Label, Button } from '../../atoms';
 
 export const Form = ({ name, onSubmit: submit, label, children, error }) => (
     <form className="form" name={name}>
-        <Label>{label}</Label>
+        <h1>{label}</h1>
         {children}
         <Button onClick={(e) => { e.preventDefault();submit(); }}>submit</Button>
         {error && (
