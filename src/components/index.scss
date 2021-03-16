@@ -9,6 +9,13 @@ $light: #F9F9FB;
 
 //type system:
 
+@mixin sentence-case() {
+  text-transform: lowercase;
+  &:first-letter {
+    text-transform: uppercase;
+  }
+}
+
 h1{
 	margin: 0;
 	font-size: 24px;
@@ -17,6 +24,14 @@ h1{
 	font-size: 20px;
 	color: $secondary;
 }
+
+label{
+	font-size: 12px;
+	font-weight: medium;
+	@include sentence-case();
+}
+
+
 
 //mixins
 @mixin font{
