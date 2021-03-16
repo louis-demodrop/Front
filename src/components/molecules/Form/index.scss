@@ -1,0 +1,11 @@
+@import '../../index.scss';
+
+form{
+	h1, span, button{
+		margin: 16px 0;
+	}
+	h1{
+		width:100%;
+		color: $secondary;
+	}
+}

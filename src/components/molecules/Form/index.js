@@ -1,4 +1,6 @@
 import { Label, Button } from '../../atoms';
+import './index.css';
+
 
 export const Form = ({ name, onSubmit: submit, label, children, error }) => (
     <form className="form" name={name}>
