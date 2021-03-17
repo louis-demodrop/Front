@@ -8,7 +8,7 @@ export const useLoginStatus = () => {
     useEffect(() => {
         async function checkLoginStatus () {
             const { data: isConnected } = await axios.get('/user/login')
-            if (isConnected) {
+            if (isConnected == true) {
                 setLogged(true)
             }
         }
