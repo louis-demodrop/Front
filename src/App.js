@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -5,16 +6,24 @@ import {
 } from "react-router-dom";
 
 import { Header } from './components/organisms/Header';
-import { FeedPage, SignInPage, SignUpPage, UploadPage } from "./components/pages"
+import { FeedPage, SignInPage, SignUpPage, UploadPage } from "./components/pages";
+import { LandingPage } from "./components/pages/LandingPage";
+import { useLoginStatus } from "./hooks/useLoginStatus";
 
 const App = () => {
-
+  const logged = useLoginStatus();
+  
   return (
       <Router>
         <Switch>
           <Route path="/" exact>
-            <Header></Header>
-            <FeedPage></FeedPage>
+            {
+              !logged ? <LandingPage></LandingPage> : 
+              <>
+                <Header></Header>
+                <FeedPage></FeedPage>
+              </>
+            }
           </Route>
           <Route path="/signin" exact>
             <SignInPage></SignInPage>
