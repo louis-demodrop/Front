@@ -1,13 +1,12 @@
 @import '../../index.scss';
 
-.form{
-	@include flex(column);
-	margin: 8px 0;
-	label{
-		margin-bottom: 8px;	
-	}
-	input{
-		margin: 0;
-	}
+label{
+	margin-bottom: 8px;	
+}
+input{
+	margin: 0;
+}
+span{
+	@include flex(column, flex-end);
 }
 

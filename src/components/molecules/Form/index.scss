@@ -1,11 +1,14 @@
 @import '../../index.scss';
 
-form{
+.form{
+	@include flex(column, center);
+	height: 100%;
+	max-width:273px;
 	h1, span, button{
 		margin: 16px 0;
 	}
 	h1{
-		width:100%;
 		color: $secondary;
+		align-self: flex-start;
 	}
 }
