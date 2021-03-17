@@ -27,7 +27,7 @@ h1{
 label{
 	font-size: 12px;
 	font-weight: medium;
-	@include sentence-case();
+	text-transform: capitalize;
 }
 
 

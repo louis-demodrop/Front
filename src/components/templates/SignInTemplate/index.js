@@ -9,7 +9,7 @@ export const SignInTemplate = ({ handleSignIn }) => {
 
     return (
         <Form label="Sign In" onSubmit={() => handleSignIn(form)}>
-            <FormInput label="username">
+            <FormInput label="User Name">
                 <TextInput 
                     name="username"
                     value={form.username}
